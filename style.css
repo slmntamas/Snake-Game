@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+#gameContainer {
+    background-color: #019701; 
+    color: #ffffff;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: calc(100vw - 20px);
+}
+
+#scoreContainer {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 5px;
+}
+#scoreContainer p {
+    margin: 0;
+}
+
+#gameCanvas {
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#score {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 7px;
+    display: block;
+}
+
+#startMessage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: block;
+}
+
+#gameContainer {
+    position: relative;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: none;
+}
+
+#muteButton, #backButton {
+    position: absolute;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#muteButton {
+    right: 10px;
+}
+
+#backButton {
+    left: 10px;
+}
+
+#startMessage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: block;
+}
+
+#startImagesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Vertikális középre igazítás */
+    gap: 25px; /* A képek közötti távolság */
+    margin-bottom: 8px; /* A képek és a szöveg közötti távolság */
+    margin-top: 20px;  /* Képek távolsága a szövegtől */
+    height: 80px; /* Biztosítja, hogy a konténer magasabb legyen a képeknél */
+}
+
+#arrows {
+    width: 100px;  /* Az első kép mérete */
+    height: 100px; /* Az első kép magassága */
+}
+
+#p_key {
+    width: 31px;  /* A második kép mérete */
+    height: 31px; /* A második kép magassága */
+}
